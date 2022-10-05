@@ -1,16 +1,14 @@
 public class Task03 {
     public static void main(String ...args) {
-        int n0 = 1;
-        int n1 = 1;
-        int n2;
-        System.out.println(n0 + "\n" + n1);
-        int i = 3;
-        while (i <= 10){
-            n2 = n0 + n1;
-            System.out.println(n2 + " ");
-            n0 = n1;
-            n1 = n2;
-            i++;
+        int num1 = 0;
+        int num2 = 1;
+        int result = 0;
+        System.out.println(num1);
+        while (num1 <= 10) {
+            num1 = num2;
+            num2 = result;
+            result = num1 + num2;
+            System.out.println(result);
         }
     }
 }
